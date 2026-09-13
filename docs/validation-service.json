@@ -1,0 +1,72 @@
+{
+  "cameras": {
+    "demo-camera_1": {
+      "id": "demo-camera_1",
+      "label": "camera_1",
+      "state": "review",
+      "probability": 0.5146959722042084,
+      "history_size": 16,
+      "error": null,
+      "dropped": 0,
+      "reason": "yolo_temporal_disagreement",
+      "detections": [
+        {
+          "label": "foreign",
+          "confidence": 0.9495450854301453,
+          "bbox": [
+            1140,
+            10,
+            3835,
+            1968
+          ]
+        }
+      ],
+      "probabilities": [
+        0.037451814860105515,
+        0.03425844386219978,
+        0.4327191710472107,
+        0.010266493074595928,
+        0.4853040277957916
+      ],
+      "ae_error": 0.13270790874958038,
+      "model_version": "upstream-v1-audited-runtime",
+      "processed": 1428.452361013,
+      "temporal_label": "normal"
+    },
+    "demo-camera_0": {
+      "id": "demo-camera_0",
+      "label": "camera_0",
+      "state": "defect",
+      "probability": 0.9675328433513641,
+      "history_size": 16,
+      "error": null,
+      "dropped": 0,
+      "reason": "temporal_defect",
+      "detections": [
+        {
+          "label": "point",
+          "confidence": 0.8342261910438538,
+          "bbox": [
+            1496,
+            665,
+            1876,
+            1001
+          ]
+        }
+      ],
+      "probabilities": [
+        0.004013392608612776,
+        0.0001386435906169936,
+        0.9120838046073914,
+        0.05129692330956459,
+        0.032467156648635864
+      ],
+      "ae_error": 0.01381613127887249,
+      "model_version": "upstream-v1-audited-runtime",
+      "processed": 1428.711275531,
+      "temporal_label": "garbage"
+    }
+  },
+  "events": 2,
+  "clean_shutdown": true
+}

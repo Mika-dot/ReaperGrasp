@@ -1,0 +1,175 @@
+{
+  "/": 200,
+  "/settings": 200,
+  "/events": 200,
+  "/api/state": 200,
+  "during_run": {
+    "cards": [
+      {
+        "camera_id": 0,
+        "status": "defect",
+        "predicted_class": "garbage",
+        "probability": 0.9675328284502029,
+        "ae_error": 0.015915220603346825,
+        "history_size": 16,
+        "fps": 2.2604664636220755,
+        "profile": {
+          "camera_id": 0,
+          "scale": 1.0,
+          "roi_x": 0,
+          "roi_y": 0,
+          "roi_w": 0,
+          "roi_h": 0,
+          "position": 0,
+          "enabled": true
+        },
+        "running": true
+      },
+      {
+        "camera_id": 1,
+        "status": "review",
+        "predicted_class": "normal",
+        "probability": 0.5146960914134979,
+        "ae_error": 0.13476446270942688,
+        "history_size": 16,
+        "fps": 2.311407324051084,
+        "profile": {
+          "camera_id": 1,
+          "scale": 1.0,
+          "roi_x": 0,
+          "roi_y": 0,
+          "roi_w": 0,
+          "roi_h": 0,
+          "position": 1,
+          "enabled": true
+        },
+        "running": true
+      }
+    ],
+    "running": true,
+    "active_model_version": "version_1",
+    "model_error": null,
+    "storage_error": null
+  },
+  "events": [
+    {
+      "camera_id": 1,
+      "class": "normal",
+      "probability": 0.5146960914134979,
+      "extra": {
+        "detections": [
+          {
+            "class_id": 1,
+            "class_name": "foreign",
+            "confidence": 0.9495450854301453,
+            "bbox_xyxy": [
+              1140,
+              10,
+              3835,
+              1968
+            ]
+          }
+        ],
+        "state": "review",
+        "decision_reason": "yolo_temporal_disagreement"
+      }
+    },
+    {
+      "camera_id": 0,
+      "class": "garbage",
+      "probability": 0.9675328284502029,
+      "extra": {
+        "detections": [
+          {
+            "class_id": 3,
+            "class_name": "point",
+            "confidence": 0.8342260718345642,
+            "bbox_xyxy": [
+              1496,
+              665,
+              1876,
+              1001
+            ]
+          }
+        ],
+        "state": "defect",
+        "decision_reason": "temporal_threshold"
+      }
+    }
+  ],
+  "event_assets": {
+    "/event_assets/20260909/cam_0_20260909_090556_b214853e5b/frame.jpg": 200,
+    "/event_assets/20260909/cam_0_20260909_090556_b214853e5b/annotated.jpg": 200,
+    "/event_assets/20260909/cam_1_20260909_090556_b9f2ff71a2/frame.jpg": 200,
+    "/event_assets/20260909/cam_1_20260909_090556_b9f2ff71a2/annotated.jpg": 200
+  },
+  "stopped": {
+    "cards": [
+      {
+        "camera_id": 0,
+        "status": "off",
+        "predicted_class": "garbage",
+        "probability": 0.9675328284502029,
+        "ae_error": 0.015915220603346825,
+        "history_size": 16,
+        "fps": 2.2604664636220755,
+        "profile": {
+          "camera_id": 0,
+          "scale": 1.0,
+          "roi_x": 0,
+          "roi_y": 0,
+          "roi_w": 0,
+          "roi_h": 0,
+          "position": 0,
+          "enabled": true
+        },
+        "running": false
+      },
+      {
+        "camera_id": 1,
+        "status": "off",
+        "predicted_class": "warming_up",
+        "probability": 0.0,
+        "ae_error": 0.0054262736812233925,
+        "history_size": 1,
+        "fps": 2.3466173729972817,
+        "profile": {
+          "camera_id": 1,
+          "scale": 1.0,
+          "roi_x": 0,
+          "roi_y": 0,
+          "roi_w": 0,
+          "roi_h": 0,
+          "position": 1,
+          "enabled": true
+        },
+        "running": false
+      }
+    ],
+    "running": false,
+    "active_model_version": "version_1",
+    "model_error": null,
+    "storage_error": null
+  },
+  "bad_source": {
+    "camera_id": 0,
+    "status": "error",
+    "predicted_class": "garbage",
+    "probability": 0.9675328284502029,
+    "ae_error": 0.015915220603346825,
+    "history_size": 16,
+    "fps": 2.2604664636220755,
+    "profile": {
+      "camera_id": 0,
+      "scale": 1.0,
+      "roi_x": 0,
+      "roi_y": 0,
+      "roi_w": 0,
+      "roi_h": 0,
+      "position": 0,
+      "enabled": true
+    },
+    "error": "No demo images in /workspace/scratch/f9bdda15e47d/deliverables/harvester-review/project/workspace/absent-test-source",
+    "running": false
+  }
+}

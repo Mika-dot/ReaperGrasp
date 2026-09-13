@@ -1,0 +1,16 @@
+{
+  "version": "upstream-v1-audited-runtime",
+  "seq_length": 16,
+  "classes": [
+    "connection",
+    "foreign",
+    "garbage",
+    "point",
+    "normal"
+  ],
+  "sha256": {
+    "yolo.pt": "3ccbfba2b736a384b4ae3e142be7fd20030917698296fae389ca4617c6b5ddfe",
+    "autoencoder_model.pth": "03e8ec8265d044d72a8c305935c8868cd1bbda36da6a8e8144f2ab70c14d39ff",
+    "best_complete_model_fixed.pth": "f3fe0f98529de796eb7332a0b0783042a7275f1400e646d6edbf8ca922d4afec"
+  }
+}

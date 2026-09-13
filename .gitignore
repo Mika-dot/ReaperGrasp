@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pt
+*.pth
+*.jpg
+*.png
+*.sqlite*
+*.log
+build/
+workspace/

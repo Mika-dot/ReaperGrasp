@@ -1,0 +1,654 @@
+[
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 1,
+    "ae_error": 0.0054262736812233925,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "11.jpg",
+    "inference_ms": 265.69822499982365
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 1,
+    "ae_error": 0.0054262736812233925,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "11.jpg",
+    "inference_ms": 135.9083240001837
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 2,
+    "ae_error": 0.0055722580291330814,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "12.jpg",
+    "inference_ms": 109.55709099994237
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 2,
+    "ae_error": 0.0055722580291330814,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "12.jpg",
+    "inference_ms": 202.9632070000389
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 3,
+    "ae_error": 0.005608718376606703,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "13.jpg",
+    "inference_ms": 139.36178899984952
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 3,
+    "ae_error": 0.005608718376606703,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "13.jpg",
+    "inference_ms": 150.31984099982765
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 4,
+    "ae_error": 0.005501976702362299,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "14.jpg",
+    "inference_ms": 108.16426800010959
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 4,
+    "ae_error": 0.005501976702362299,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "14.jpg",
+    "inference_ms": 102.3733329998322
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 5,
+    "ae_error": 0.006896390579640865,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "15.jpg",
+    "inference_ms": 113.21848799980216
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 5,
+    "ae_error": 0.006896390579640865,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "15.jpg",
+    "inference_ms": 230.9662269999535
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 6,
+    "ae_error": 0.007063844706863165,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "16.jpg",
+    "inference_ms": 110.85118200003308
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 6,
+    "ae_error": 0.007063844706863165,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "16.jpg",
+    "inference_ms": 101.93217000005461
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 7,
+    "ae_error": 0.006836016196757555,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "17.jpg",
+    "inference_ms": 146.58966599995438
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 7,
+    "ae_error": 0.006836016196757555,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "17.jpg",
+    "inference_ms": 113.73404699997991
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 8,
+    "ae_error": 0.005514988210052252,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "18.jpg",
+    "inference_ms": 122.95137000000977
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 8,
+    "ae_error": 0.005514988210052252,
+    "detections": [],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "18.jpg",
+    "inference_ms": 124.63065700012521
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 9,
+    "ae_error": 0.014582549221813679,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.8405315279960632,
+        "bbox_xyxy": [
+          2220,
+          761,
+          2599,
+          1088
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "19.jpg",
+    "inference_ms": 124.4353920001231
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 9,
+    "ae_error": 0.1436074823141098,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9450216889381409,
+        "bbox_xyxy": [
+          1182,
+          4,
+          3835,
+          1973
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "19.jpg",
+    "inference_ms": 120.08619200014437
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 10,
+    "ae_error": 0.014616010710597038,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.877008318901062,
+        "bbox_xyxy": [
+          2123,
+          743,
+          2498,
+          1070
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "20.jpg",
+    "inference_ms": 100.83779699994011
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 10,
+    "ae_error": 0.14172181487083435,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9497366547584534,
+        "bbox_xyxy": [
+          1068,
+          0,
+          3834,
+          1940
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "20.jpg",
+    "inference_ms": 103.58625899993967
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 11,
+    "ae_error": 0.01665663719177246,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.8743483424186707,
+        "bbox_xyxy": [
+          1955,
+          729,
+          2320,
+          1057
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "21.jpg",
+    "inference_ms": 98.14316599999984
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 11,
+    "ae_error": 0.1449984312057495,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9508761167526245,
+        "bbox_xyxy": [
+          1027,
+          0,
+          3828,
+          1941
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "21.jpg",
+    "inference_ms": 110.20695399997749
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 12,
+    "ae_error": 0.014004470780491829,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.8450578451156616,
+        "bbox_xyxy": [
+          1918,
+          720,
+          2306,
+          1050
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "22.jpg",
+    "inference_ms": 114.07381000003625
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 12,
+    "ae_error": 0.14678052067756653,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9545947313308716,
+        "bbox_xyxy": [
+          979,
+          13,
+          3837,
+          1929
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "22.jpg",
+    "inference_ms": 104.97970300002635
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 13,
+    "ae_error": 0.015464454889297485,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.854236900806427,
+        "bbox_xyxy": [
+          1835,
+          712,
+          2199,
+          1037
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "23.jpg",
+    "inference_ms": 109.15362299988374
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 13,
+    "ae_error": 0.14835183322429657,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9513248801231384,
+        "bbox_xyxy": [
+          961,
+          0,
+          3836,
+          1922
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "23.jpg",
+    "inference_ms": 107.90021499997238
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 14,
+    "ae_error": 0.015153740532696247,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.8628313541412354,
+        "bbox_xyxy": [
+          1768,
+          702,
+          2140,
+          1037
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "24.jpg",
+    "inference_ms": 118.65399799989973
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 14,
+    "ae_error": 0.1489735096693039,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9473480582237244,
+        "bbox_xyxy": [
+          933,
+          2,
+          3837,
+          1918
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "24.jpg",
+    "inference_ms": 118.1236270001591
+  },
+  {
+    "camera_id": 0,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 15,
+    "ae_error": 0.013993175700306892,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.8339501023292542,
+        "bbox_xyxy": [
+          1672,
+          683,
+          2049,
+          1016
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "25.jpg",
+    "inference_ms": 114.38640200003647
+  },
+  {
+    "camera_id": 1,
+    "state": "warming_up",
+    "predicted_class": "warming_up",
+    "probability": 0.0,
+    "class_probabilities": null,
+    "history_size": 15,
+    "ae_error": 0.14222843945026398,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9432536959648132,
+        "bbox_xyxy": [
+          1193,
+          0,
+          3835,
+          1972
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "insufficient_history",
+    "frame": "25.jpg",
+    "inference_ms": 128.51204899993718
+  },
+  {
+    "camera_id": 0,
+    "state": "defect",
+    "predicted_class": "garbage",
+    "probability": 0.9675328284502029,
+    "class_probabilities": [
+      0.004013392608612776,
+      0.0001386435906169936,
+      0.9120838046073914,
+      0.05129692330956459,
+      0.03246717154979706
+    ],
+    "history_size": 16,
+    "ae_error": 0.015915220603346825,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.8342260718345642,
+        "bbox_xyxy": [
+          1496,
+          665,
+          1876,
+          1001
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "temporal_threshold",
+    "frame": "26.jpg",
+    "inference_ms": 146.87304399990353
+  },
+  {
+    "camera_id": 1,
+    "state": "review",
+    "predicted_class": "normal",
+    "probability": 0.5146958231925964,
+    "class_probabilities": [
+      0.03745180368423462,
+      0.03425845876336098,
+      0.43271905183792114,
+      0.010266497731208801,
+      0.48530417680740356
+    ],
+    "history_size": 16,
+    "ae_error": 0.13476446270942688,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9495450854301453,
+        "bbox_xyxy": [
+          1140,
+          10,
+          3835,
+          1968
+        ]
+      }
+    ],
+    "engine": "trained_model",
+    "decision_reason": "yolo_temporal_disagreement",
+    "frame": "26.jpg",
+    "inference_ms": 101.23781700008294
+  }
+]

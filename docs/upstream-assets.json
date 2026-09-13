@@ -1,0 +1,177 @@
+[
+  {
+    "path": "models/version_1/yolo.pt",
+    "bytes": 6222371,
+    "sha256": "3ccbfba2b736a384b4ae3e142be7fd20030917698296fae389ca4617c6b5ddfe"
+  },
+  {
+    "path": "models/version_1/autoencoder_model.pth",
+    "bytes": 28326172,
+    "sha256": "03e8ec8265d044d72a8c305935c8868cd1bbda36da6a8e8144f2ab70c14d39ff"
+  },
+  {
+    "path": "models/version_1/best_complete_model_fixed.pth",
+    "bytes": 73151034,
+    "sha256": "f3fe0f98529de796eb7332a0b0783042a7275f1400e646d6edbf8ca922d4afec"
+  },
+  {
+    "path": "workspace/demo/camera_0/11.jpg",
+    "bytes": 2298747,
+    "sha256": "778894896858adb0480ae008bed397ba369b0d7b13b4b7cb6e9bfaa0c991b0d0"
+  },
+  {
+    "path": "workspace/demo/camera_0/12.jpg",
+    "bytes": 2232541,
+    "sha256": "9146abc1297022b1f8d1aad44f965004174c7395f15486413e7f9c9cf1c64ba2"
+  },
+  {
+    "path": "workspace/demo/camera_0/13.jpg",
+    "bytes": 2142166,
+    "sha256": "2e6f319c0e4d8821dbffa42d2648ae4ee55de3aa1e95e4dc6a9ccbd3ba15f5b5"
+  },
+  {
+    "path": "workspace/demo/camera_0/14.jpg",
+    "bytes": 2221449,
+    "sha256": "607a63f8d57b625c18f02ee310cc56def3cecd48731354562993ddc8fefb6555"
+  },
+  {
+    "path": "workspace/demo/camera_0/15.jpg",
+    "bytes": 2398080,
+    "sha256": "3776420a808bdf8a16d648660398825b70d7b11628edab56c53461efd681d48b"
+  },
+  {
+    "path": "workspace/demo/camera_0/16.jpg",
+    "bytes": 2289436,
+    "sha256": "656b30d079136669f6eff07ebc3ac657782fb03d71fbf32ea9f7afdc09bb3f18"
+  },
+  {
+    "path": "workspace/demo/camera_0/17.jpg",
+    "bytes": 2225781,
+    "sha256": "d643026cb39a69c82fce6ace144459f6ca099c691e6e9a790259f8883cdf46b7"
+  },
+  {
+    "path": "workspace/demo/camera_0/18.jpg",
+    "bytes": 2123602,
+    "sha256": "ff5ae9e3526c595e8b7950d1d3e498c82a6f637dff0b9c8c6437e85b7df38d22"
+  },
+  {
+    "path": "workspace/demo/camera_0/19.jpg",
+    "bytes": 1804909,
+    "sha256": "4bc84220abae90e693e65f438db53379bd1a68569ede4dfe15563db150f5a0b6"
+  },
+  {
+    "path": "workspace/demo/camera_0/20.jpg",
+    "bytes": 1739101,
+    "sha256": "7e59d801ccc99df7f6e17c677c38c1ec86fbe4394305e9a9a51a20e3c0447af3"
+  },
+  {
+    "path": "workspace/demo/camera_0/21.jpg",
+    "bytes": 1678480,
+    "sha256": "8a363bd33fdfc19b45319761fb80200208bc8568c0f008a7781c0bfbfa3124c4"
+  },
+  {
+    "path": "workspace/demo/camera_0/22.jpg",
+    "bytes": 1593021,
+    "sha256": "24f8a45d2b4c437f5142832be14a6799edae8756d69bf5541cd4ea2c1a49c532"
+  },
+  {
+    "path": "workspace/demo/camera_0/23.jpg",
+    "bytes": 1672170,
+    "sha256": "de85b80b3e6af3891452bc9ce90e5b3882cb82e49c99887f9aa2a85294930adf"
+  },
+  {
+    "path": "workspace/demo/camera_0/24.jpg",
+    "bytes": 1720403,
+    "sha256": "8f390044b45bcccfe8f596a8a1874d64c389a6f25e446eeced42af71361d3669"
+  },
+  {
+    "path": "workspace/demo/camera_0/25.jpg",
+    "bytes": 1664462,
+    "sha256": "2ce145e83f40d9316d022148776169c9d3a30ee82a31cbf33499f16451495585"
+  },
+  {
+    "path": "workspace/demo/camera_0/26.jpg",
+    "bytes": 1790665,
+    "sha256": "ff225eb59a8aaf594c8424c3f15546b2da9ffbbbbd2ce02b04815a344a00e4fb"
+  },
+  {
+    "path": "workspace/demo/camera_1/11.jpg",
+    "bytes": 2298747,
+    "sha256": "778894896858adb0480ae008bed397ba369b0d7b13b4b7cb6e9bfaa0c991b0d0"
+  },
+  {
+    "path": "workspace/demo/camera_1/12.jpg",
+    "bytes": 2232541,
+    "sha256": "9146abc1297022b1f8d1aad44f965004174c7395f15486413e7f9c9cf1c64ba2"
+  },
+  {
+    "path": "workspace/demo/camera_1/13.jpg",
+    "bytes": 2142166,
+    "sha256": "2e6f319c0e4d8821dbffa42d2648ae4ee55de3aa1e95e4dc6a9ccbd3ba15f5b5"
+  },
+  {
+    "path": "workspace/demo/camera_1/14.jpg",
+    "bytes": 2221449,
+    "sha256": "607a63f8d57b625c18f02ee310cc56def3cecd48731354562993ddc8fefb6555"
+  },
+  {
+    "path": "workspace/demo/camera_1/15.jpg",
+    "bytes": 2398080,
+    "sha256": "3776420a808bdf8a16d648660398825b70d7b11628edab56c53461efd681d48b"
+  },
+  {
+    "path": "workspace/demo/camera_1/16.jpg",
+    "bytes": 2289436,
+    "sha256": "656b30d079136669f6eff07ebc3ac657782fb03d71fbf32ea9f7afdc09bb3f18"
+  },
+  {
+    "path": "workspace/demo/camera_1/17.jpg",
+    "bytes": 2225781,
+    "sha256": "d643026cb39a69c82fce6ace144459f6ca099c691e6e9a790259f8883cdf46b7"
+  },
+  {
+    "path": "workspace/demo/camera_1/18.jpg",
+    "bytes": 2123602,
+    "sha256": "ff5ae9e3526c595e8b7950d1d3e498c82a6f637dff0b9c8c6437e85b7df38d22"
+  },
+  {
+    "path": "workspace/demo/camera_1/19.jpg",
+    "bytes": 1780932,
+    "sha256": "31b0632b65b25d568e3a4b370b00cf78ae713cfca6a0074c08081fbb93174a2f"
+  },
+  {
+    "path": "workspace/demo/camera_1/20.jpg",
+    "bytes": 1538714,
+    "sha256": "bab91df16a00ad0d40a1e7a79e8ff79044d268da295bc48113560a8174048baf"
+  },
+  {
+    "path": "workspace/demo/camera_1/21.jpg",
+    "bytes": 1684183,
+    "sha256": "09dbb5a1de643e8ba417681f1f71e9730eb76e0374d45d85ef9fefbf5ece7601"
+  },
+  {
+    "path": "workspace/demo/camera_1/22.jpg",
+    "bytes": 1670351,
+    "sha256": "f1d736357f8e0b761ed506425f265c3c432bc0ea9636a12935a87f106c52cb28"
+  },
+  {
+    "path": "workspace/demo/camera_1/23.jpg",
+    "bytes": 1650978,
+    "sha256": "80f6bdb4ffe8d2a663254cacd73207af01ea7a5d86f6a596796dffb30cc5dcda"
+  },
+  {
+    "path": "workspace/demo/camera_1/24.jpg",
+    "bytes": 1723242,
+    "sha256": "b034ffcdd86cc5f0d5001253a8e2365a3d07ad744942634c6b0a4b712ecc4095"
+  },
+  {
+    "path": "workspace/demo/camera_1/25.jpg",
+    "bytes": 1800665,
+    "sha256": "c48a071944206c568ac04dc4c215203878a85155f2bf3cd9b602f0fec391c33a"
+  },
+  {
+    "path": "workspace/demo/camera_1/26.jpg",
+    "bytes": 1539950,
+    "sha256": "5ee28dfb2934fa701e12f55a2ccb3e698f00dbc2086986458948191ff20d0aeb"
+  }
+]

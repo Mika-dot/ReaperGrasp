@@ -1,0 +1,27 @@
+[Unit]
+Description=ReaperGrasp fullscreen operator display
+After=systemd-user-sessions.service reapergrasp.service
+Conflicts=getty@tty1.service
+StartLimitIntervalSec=0
+
+[Service]
+User=reapergrasp
+Group=reapergrasp
+SupplementaryGroups=video render input
+PAMName=login
+TTYPath=/dev/tty1
+StandardInput=tty
+TTYReset=yes
+TTYVHangup=yes
+TTYVTDisallocate=yes
+RuntimeDirectory=reapergrasp-kiosk
+RuntimeDirectoryMode=0700
+Environment=XDG_RUNTIME_DIR=/run/reapergrasp-kiosk
+Environment=XDG_SESSION_TYPE=wayland
+Environment=HOME=/var/lib/reapergrasp
+ExecStart=/usr/bin/cage -- /usr/bin/chromium --ozone-platform=wayland --kiosk --no-first-run --disable-session-crashed-bubble --noerrdialogs --user-data-dir=/var/lib/reapergrasp/chromium http://127.0.0.1:8010
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

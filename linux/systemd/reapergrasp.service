@@ -1,0 +1,32 @@
+[Unit]
+Description=ReaperGrasp inspection backend
+After=local-fs.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=reapergrasp
+Group=reapergrasp
+SupplementaryGroups=video render
+WorkingDirectory=/opt/reapergrasp
+Environment=REAPERGRASP_STATE_DIR=/var/lib/reapergrasp
+Environment=YOLO_CONFIG_DIR=/var/lib/reapergrasp/ultralytics
+Environment=MPLCONFIGDIR=/var/lib/reapergrasp/matplotlib
+Environment=OMP_NUM_THREADS=2
+ExecStart=/opt/reapergrasp/.venv/bin/python -m reapergrasp
+WatchdogSec=120
+NotifyAccess=main
+Restart=always
+RestartSec=3
+TimeoutStopSec=40
+KillMode=control-group
+StateDirectory=reapergrasp
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/reapergrasp
+
+[Install]
+WantedBy=multi-user.target

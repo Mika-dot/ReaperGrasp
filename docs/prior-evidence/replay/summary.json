@@ -1,0 +1,87 @@
+{
+  "frames": 32,
+  "mode": "trained_weights_cpu_replay",
+  "final": [
+    {
+      "camera_id": 0,
+      "state": "defect",
+      "predicted_class": "garbage",
+      "probability": 0.9675328284502029,
+      "class_probabilities": [
+        0.004013392608612776,
+        0.0001386435906169936,
+        0.9120838046073914,
+        0.05129692330956459,
+        0.03246717154979706
+      ],
+      "history_size": 16,
+      "ae_error": 0.015915220603346825,
+      "detections": [
+        {
+          "class_id": 3,
+          "class_name": "point",
+          "confidence": 0.8342260718345642,
+          "bbox_xyxy": [
+            1496,
+            665,
+            1876,
+            1001
+          ]
+        }
+      ],
+      "engine": "trained_model",
+      "decision_reason": "temporal_threshold",
+      "frame": "26.jpg",
+      "inference_ms": 146.87304399990353
+    },
+    {
+      "camera_id": 1,
+      "state": "review",
+      "predicted_class": "normal",
+      "probability": 0.5146958231925964,
+      "class_probabilities": [
+        0.03745180368423462,
+        0.03425845876336098,
+        0.43271905183792114,
+        0.010266497731208801,
+        0.48530417680740356
+      ],
+      "history_size": 16,
+      "ae_error": 0.13476446270942688,
+      "detections": [
+        {
+          "class_id": 1,
+          "class_name": "foreign",
+          "confidence": 0.9495450854301453,
+          "bbox_xyxy": [
+            1140,
+            10,
+            3835,
+            1968
+          ]
+        }
+      ],
+      "engine": "trained_model",
+      "decision_reason": "yolo_temporal_disagreement",
+      "frame": "26.jpg",
+      "inference_ms": 101.23781700008294
+    }
+  ],
+  "timing_ms": {
+    "mean": 128.13781040623695,
+    "p95": 215.56456600000044,
+    "max": 265.69822499982365
+  },
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.8.0+cpu",
+    "opencv": "4.11.0",
+    "ultralytics": "8.3.221",
+    "threads": 2
+  },
+  "limitations": [
+    "No ground-truth annotations: no accuracy/recall estimate.",
+    "Timing excludes capture, image decoding, display, storage and queueing.",
+    "Replay is sequential and does not establish live camera throughput."
+  ]
+}

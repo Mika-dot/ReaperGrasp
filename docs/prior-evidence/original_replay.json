@@ -1,0 +1,770 @@
+[
+  {
+    "camera_id": 0,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.0,
+    "class_probabilities": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "history_size": 1,
+    "ae_error": 0.0054262736812233925,
+    "detections": [],
+    "frame": "11.jpg",
+    "elapsed_ms": 200.91551900009108
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.0,
+    "class_probabilities": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "history_size": 1,
+    "ae_error": 0.0054262736812233925,
+    "detections": [],
+    "frame": "11.jpg",
+    "elapsed_ms": 130.23789500016392
+  },
+  {
+    "camera_id": 0,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.0,
+    "class_probabilities": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "history_size": 2,
+    "ae_error": 0.0055722580291330814,
+    "detections": [],
+    "frame": "12.jpg",
+    "elapsed_ms": 129.68340799989164
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.0,
+    "class_probabilities": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "history_size": 2,
+    "ae_error": 0.0055722580291330814,
+    "detections": [],
+    "frame": "12.jpg",
+    "elapsed_ms": 121.1823319999894
+  },
+  {
+    "camera_id": 0,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.006225466728210449,
+    "class_probabilities": [
+      0.0028847951907664537,
+      7.620435644639656e-05,
+      0.0026691737584769726,
+      0.0005952608771622181,
+      0.9937745332717896
+    ],
+    "history_size": 3,
+    "ae_error": 0.005608718376606703,
+    "detections": [],
+    "frame": "13.jpg",
+    "elapsed_ms": 112.59471700009271
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.006225466728210449,
+    "class_probabilities": [
+      0.002884796354919672,
+      7.620435644639656e-05,
+      0.0026691751554608345,
+      0.0005952611682005227,
+      0.9937745332717896
+    ],
+    "history_size": 3,
+    "ae_error": 0.005608718376606703,
+    "detections": [],
+    "frame": "13.jpg",
+    "elapsed_ms": 111.9486349998624
+  },
+  {
+    "camera_id": 0,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.0016763806343078613,
+    "class_probabilities": [
+      0.0006290944293141365,
+      1.105209594243206e-05,
+      0.0009054619586095214,
+      0.0001307352795265615,
+      0.9983236193656921
+    ],
+    "history_size": 4,
+    "ae_error": 0.005501976702362299,
+    "detections": [],
+    "frame": "14.jpg",
+    "elapsed_ms": 169.04181499990045
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.0016763806343078613,
+    "class_probabilities": [
+      0.0006290935561992228,
+      1.105207502405392e-05,
+      0.0009054610854946077,
+      0.00013073503214400262,
+      0.9983236193656921
+    ],
+    "history_size": 4,
+    "ae_error": 0.005501976702362299,
+    "detections": [],
+    "frame": "14.jpg",
+    "elapsed_ms": 148.5730599999897
+  },
+  {
+    "camera_id": 0,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.000561058521270752,
+    "class_probabilities": [
+      0.00016807518841233104,
+      2.0026936908834614e-06,
+      0.0003557912423275411,
+      3.5207798646297306e-05,
+      0.9994389414787292
+    ],
+    "history_size": 5,
+    "ae_error": 0.006896390579640865,
+    "detections": [],
+    "frame": "15.jpg",
+    "elapsed_ms": 104.48744099994656
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.000561058521270752,
+    "class_probabilities": [
+      0.00016807534848339856,
+      2.0026936908834614e-06,
+      0.00035579141695052385,
+      3.520783502608538e-05,
+      0.9994389414787292
+    ],
+    "history_size": 5,
+    "ae_error": 0.006896390579640865,
+    "detections": [],
+    "frame": "15.jpg",
+    "elapsed_ms": 115.17565500003002
+  },
+  {
+    "camera_id": 0,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.0002471804618835449,
+    "class_probabilities": [
+      6.132741691544652e-05,
+      5.398809435064322e-07,
+      0.00017241528257727623,
+      1.2901951777166687e-05,
+      0.9997528195381165
+    ],
+    "history_size": 6,
+    "ae_error": 0.007063844706863165,
+    "detections": [],
+    "frame": "16.jpg",
+    "elapsed_ms": 110.00727900000129
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.0002471804618835449,
+    "class_probabilities": [
+      6.132741691544652e-05,
+      5.398809435064322e-07,
+      0.00017241528257727623,
+      1.2901951777166687e-05,
+      0.9997528195381165
+    ],
+    "history_size": 6,
+    "ae_error": 0.007063844706863165,
+    "detections": [],
+    "frame": "16.jpg",
+    "elapsed_ms": 94.19374899994182
+  },
+  {
+    "camera_id": 0,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.00014066696166992188,
+    "class_probabilities": [
+      3.034830115211662e-05,
+      2.1801474758831318e-07,
+      0.00010367627692176029,
+      6.4335117713199e-06,
+      0.9998593330383301
+    ],
+    "history_size": 7,
+    "ae_error": 0.006836016196757555,
+    "detections": [],
+    "frame": "17.jpg",
+    "elapsed_ms": 112.51496599993516
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.00014066696166992188,
+    "class_probabilities": [
+      3.034830115211662e-05,
+      2.1801453442549246e-07,
+      0.00010367637150920928,
+      6.4335117713199e-06,
+      0.9998593330383301
+    ],
+    "history_size": 7,
+    "ae_error": 0.006836016196757555,
+    "detections": [],
+    "frame": "17.jpg",
+    "elapsed_ms": 131.065149999813
+  },
+  {
+    "camera_id": 0,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 9.810924530029297e-05,
+    "class_probabilities": [
+      1.9636163415270858e-05,
+      1.26629785768273e-07,
+      7.41800686228089e-05,
+      4.200162493361859e-06,
+      0.9999018907546997
+    ],
+    "history_size": 8,
+    "ae_error": 0.005514988210052252,
+    "detections": [],
+    "frame": "18.jpg",
+    "elapsed_ms": 150.71153899998535
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 9.810924530029297e-05,
+    "class_probabilities": [
+      1.9636145225376822e-05,
+      1.2662967208143527e-07,
+      7.417992310365662e-05,
+      4.200154762656894e-06,
+      0.9999018907546997
+    ],
+    "history_size": 8,
+    "ae_error": 0.005514988210052252,
+    "detections": [],
+    "frame": "18.jpg",
+    "elapsed_ms": 108.98960100007571
+  },
+  {
+    "camera_id": 0,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 9.739398956298828e-05,
+    "class_probabilities": [
+      1.7915643184096552e-05,
+      1.0397365457492924e-07,
+      7.561774691566825e-05,
+      3.698346972669242e-06,
+      0.999902606010437
+    ],
+    "history_size": 9,
+    "ae_error": 0.014582549221813679,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.8405315279960632,
+        "bbox_xyxy": [
+          2220,
+          761,
+          2599,
+          1088
+        ]
+      }
+    ],
+    "frame": "19.jpg",
+    "elapsed_ms": 107.43725199995424
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.00010192394256591797,
+    "class_probabilities": [
+      1.8520573576097377e-05,
+      1.196582246620892e-07,
+      7.930221181595698e-05,
+      3.9994765757001005e-06,
+      0.9998980760574341
+    ],
+    "history_size": 9,
+    "ae_error": 0.1436074823141098,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9450216889381409,
+        "bbox_xyxy": [
+          1182,
+          4,
+          3835,
+          1973
+        ]
+      }
+    ],
+    "frame": "19.jpg",
+    "elapsed_ms": 110.45373299998573
+  },
+  {
+    "camera_id": 0,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.0002288222312927246,
+    "class_probabilities": [
+      2.975472671096213e-05,
+      1.4416382043691556e-07,
+      0.00019427867664489895,
+      4.645127773983404e-06,
+      0.9997711777687073
+    ],
+    "history_size": 10,
+    "ae_error": 0.014616010710597038,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.877008318901062,
+        "bbox_xyxy": [
+          2123,
+          743,
+          2498,
+          1070
+        ]
+      }
+    ],
+    "frame": "20.jpg",
+    "elapsed_ms": 129.6198820000427
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.0001742243766784668,
+    "class_probabilities": [
+      3.0375142159755342e-05,
+      2.08343024610258e-07,
+      0.0001381071488140151,
+      5.59353657081374e-06,
+      0.9998257756233215
+    ],
+    "history_size": 10,
+    "ae_error": 0.14172181487083435,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9497366547584534,
+        "bbox_xyxy": [
+          1068,
+          0,
+          3834,
+          1940
+        ]
+      }
+    ],
+    "frame": "20.jpg",
+    "elapsed_ms": 103.40700899996591
+  },
+  {
+    "camera_id": 0,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.010829746723175049,
+    "class_probabilities": [
+      0.0001413136487826705,
+      1.2545941672215122e-06,
+      0.010649731382727623,
+      3.745824869838543e-05,
+      0.989170253276825
+    ],
+    "history_size": 11,
+    "ae_error": 0.01665663719177246,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.8743483424186707,
+        "bbox_xyxy": [
+          1955,
+          729,
+          2320,
+          1057
+        ]
+      }
+    ],
+    "frame": "21.jpg",
+    "elapsed_ms": 99.72222400006103
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.00044721364974975586,
+    "class_probabilities": [
+      8.213976980186999e-05,
+      6.442558628805273e-07,
+      0.000353593728505075,
+      1.0778338946693111e-05,
+      0.9995527863502502
+    ],
+    "history_size": 11,
+    "ae_error": 0.1449984312057495,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9508761167526245,
+        "bbox_xyxy": [
+          1027,
+          0,
+          3828,
+          1941
+        ]
+      }
+    ],
+    "frame": "21.jpg",
+    "elapsed_ms": 98.48019699984434
+  },
+  {
+    "camera_id": 0,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.2711694836616516,
+    "class_probabilities": [
+      0.0006028586067259312,
+      1.0139961887034588e-05,
+      0.2702041566371918,
+      0.0003522980259731412,
+      0.7288305163383484
+    ],
+    "history_size": 12,
+    "ae_error": 0.014004470780491829,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.8450578451156616,
+        "bbox_xyxy": [
+          1918,
+          720,
+          2306,
+          1050
+        ]
+      }
+    ],
+    "frame": "22.jpg",
+    "elapsed_ms": 111.53448499999286
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.0025658011436462402,
+    "class_probabilities": [
+      0.0003742604167200625,
+      5.0505641411291435e-06,
+      0.002144659636542201,
+      4.183375131106004e-05,
+      0.9974341988563538
+    ],
+    "history_size": 12,
+    "ae_error": 0.14678052067756653,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9545947313308716,
+        "bbox_xyxy": [
+          979,
+          13,
+          3837,
+          1929
+        ]
+      }
+    ],
+    "frame": "22.jpg",
+    "elapsed_ms": 127.81428900007086
+  },
+  {
+    "camera_id": 0,
+    "state": "normal",
+    "predicted_class": "garbage",
+    "probability": 0.5827137231826782,
+    "class_probabilities": [
+      0.0030585306230932474,
+      4.129821536480449e-05,
+      0.5772678852081299,
+      0.00234608119353652,
+      0.4172862768173218
+    ],
+    "history_size": 13,
+    "ae_error": 0.015464454889297485,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.854236900806427,
+        "bbox_xyxy": [
+          1835,
+          712,
+          2199,
+          1037
+        ]
+      }
+    ],
+    "frame": "23.jpg",
+    "elapsed_ms": 119.2257029999837
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.02970057725906372,
+    "class_probabilities": [
+      0.002373413648456335,
+      9.289511217502877e-05,
+      0.026887567713856697,
+      0.00034670153399929404,
+      0.9702994227409363
+    ],
+    "history_size": 13,
+    "ae_error": 0.14835183322429657,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9513248801231384,
+        "bbox_xyxy": [
+          961,
+          0,
+          3836,
+          1922
+        ]
+      }
+    ],
+    "frame": "23.jpg",
+    "elapsed_ms": 128.48343499990733
+  },
+  {
+    "camera_id": 0,
+    "state": "defect",
+    "predicted_class": "garbage",
+    "probability": 0.8472827821969986,
+    "class_probabilities": [
+      0.006137826479971409,
+      9.703078103484586e-05,
+      0.8301715850830078,
+      0.010876336134970188,
+      0.1527172178030014
+    ],
+    "history_size": 14,
+    "ae_error": 0.015153740532696247,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.8628313541412354,
+        "bbox_xyxy": [
+          1768,
+          702,
+          2140,
+          1037
+        ]
+      }
+    ],
+    "frame": "24.jpg",
+    "elapsed_ms": 123.51755499980754
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.12354516983032227,
+    "class_probabilities": [
+      0.008831565268337727,
+      0.000984851736575365,
+      0.11220762133598328,
+      0.0015210887650027871,
+      0.8764548301696777
+    ],
+    "history_size": 14,
+    "ae_error": 0.1489735096693039,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9473480582237244,
+        "bbox_xyxy": [
+          933,
+          2,
+          3837,
+          1918
+        ]
+      }
+    ],
+    "frame": "24.jpg",
+    "elapsed_ms": 186.05023600002824
+  },
+  {
+    "camera_id": 0,
+    "state": "defect",
+    "predicted_class": "garbage",
+    "probability": 0.9424411058425903,
+    "class_probabilities": [
+      0.004922118037939072,
+      0.0001266258768737316,
+      0.9077624082565308,
+      0.029630022123456,
+      0.05755889415740967
+    ],
+    "history_size": 15,
+    "ae_error": 0.013993175700306892,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.8339501023292542,
+        "bbox_xyxy": [
+          1672,
+          683,
+          2049,
+          1016
+        ]
+      }
+    ],
+    "frame": "25.jpg",
+    "elapsed_ms": 186.91258400008337
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.3152380585670471,
+    "class_probabilities": [
+      0.023011866956949234,
+      0.007509378716349602,
+      0.27991753816604614,
+      0.004799285437911749,
+      0.6847619414329529
+    ],
+    "history_size": 15,
+    "ae_error": 0.14222843945026398,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9432536959648132,
+        "bbox_xyxy": [
+          1193,
+          0,
+          3835,
+          1972
+        ]
+      }
+    ],
+    "frame": "25.jpg",
+    "elapsed_ms": 82.14972199994008
+  },
+  {
+    "camera_id": 0,
+    "state": "defect",
+    "predicted_class": "garbage",
+    "probability": 0.9675328284502029,
+    "class_probabilities": [
+      0.004013392608612776,
+      0.0001386435906169936,
+      0.9120838046073914,
+      0.05129692330956459,
+      0.03246717154979706
+    ],
+    "history_size": 16,
+    "ae_error": 0.015915220603346825,
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "point",
+        "confidence": 0.8342260718345642,
+        "bbox_xyxy": [
+          1496,
+          665,
+          1876,
+          1001
+        ]
+      }
+    ],
+    "frame": "26.jpg",
+    "elapsed_ms": 87.61061999985031
+  },
+  {
+    "camera_id": 1,
+    "state": "normal",
+    "predicted_class": "normal",
+    "probability": 0.5146958231925964,
+    "class_probabilities": [
+      0.03745180368423462,
+      0.03425845876336098,
+      0.43271905183792114,
+      0.010266497731208801,
+      0.48530417680740356
+    ],
+    "history_size": 16,
+    "ae_error": 0.13476446270942688,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "foreign",
+        "confidence": 0.9495450854301453,
+        "bbox_xyxy": [
+          1140,
+          10,
+          3835,
+          1968
+        ]
+      }
+    ],
+    "frame": "26.jpg",
+    "elapsed_ms": 86.46410799997284
+  }
+]

@@ -1,0 +1,31 @@
+name: Verify and bundle
+on: [push, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install -r requirements.txt pytest==8.3.5 httpx==0.28.1
+      - run: python tools/fetch_assets.py
+      - run: python -m pytest -q tests
+      - run: python tools/replay_check.py
+      - run: python tools/service_check.py
+      - run: |
+          pip download --dest wheelhouse torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cpu
+          printf 'torch==2.8.0+cpu\ntorchvision==0.23.0+cpu\n' > /tmp/cpu-constraints.txt
+          pip download --dest wheelhouse --find-links wheelhouse -c /tmp/cpu-constraints.txt -r requirements.txt
+          python -m venv /tmp/offline-check
+          /tmp/offline-check/bin/pip install --no-index --find-links wheelhouse torch==2.8.0+cpu torchvision==0.23.0+cpu -r requirements.txt
+          /tmp/offline-check/bin/python -c 'import torch, cv2; from reapergrasp.model import verify_bundle; verify_bundle("models/version_1")'
+      - run: tar --exclude=.git --exclude=.venv --exclude=__pycache__ -czf /tmp/ReaperGrasp-offline-cpu-py311.tar.gz .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ReaperGrasp-offline-cpu-py311
+          path: /tmp/ReaperGrasp-offline-cpu-py311.tar.gz
+          retention-days: 30

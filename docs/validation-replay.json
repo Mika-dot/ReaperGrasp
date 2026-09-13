@@ -1,0 +1,68 @@
+[
+  {
+    "camera": "camera_0",
+    "frames": 16,
+    "last": {
+      "state": "defect",
+      "probability": 0.9675328359007835,
+      "label": "garbage",
+      "reason": "temporal_defect",
+      "detections": [
+        {
+          "label": "point",
+          "confidence": 0.8342261910438538,
+          "bbox": [
+            1496,
+            665,
+            1876,
+            1001
+          ]
+        }
+      ],
+      "probabilities": [
+        0.004013392608612776,
+        0.0001386435906169936,
+        0.9120838046073914,
+        0.05129692330956459,
+        0.03246716409921646
+      ],
+      "ae_error": 0.01381613127887249,
+      "history_size": 16,
+      "model_version": "upstream-v1-audited-runtime"
+    },
+    "mean_seconds": 0.18926641124999577
+  },
+  {
+    "camera": "camera_1",
+    "frames": 16,
+    "last": {
+      "state": "review",
+      "probability": 0.5146959722042084,
+      "label": "normal",
+      "reason": "yolo_temporal_disagreement",
+      "detections": [
+        {
+          "label": "foreign",
+          "confidence": 0.9495450854301453,
+          "bbox": [
+            1140,
+            10,
+            3835,
+            1968
+          ]
+        }
+      ],
+      "probabilities": [
+        0.03745182231068611,
+        0.03425845131278038,
+        0.4327191710472107,
+        0.010266497731208801,
+        0.4853040277957916
+      ],
+      "ae_error": 0.13270790874958038,
+      "history_size": 16,
+      "model_version": "upstream-v1-audited-runtime"
+    },
+    "mean_seconds": 0.18812143449999752
+  }
+]

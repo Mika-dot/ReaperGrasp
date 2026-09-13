@@ -1,0 +1,7 @@
+ultralytics==8.3.221
+opencv-python==4.11.0.86
+numpy==1.26.4
+fastapi==0.115.0
+uvicorn==0.30.6
+matplotlib==3.10.6
+tqdm==4.67.1
