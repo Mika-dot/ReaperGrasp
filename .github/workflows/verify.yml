@@ -22,6 +22,7 @@ jobs:
       - run: python -m playwright install --with-deps chromium
       - run: python tools/ui_check.py
       - run: |
+          pip download --dest wheelhouse pip==25.2
           pip download --dest wheelhouse torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cpu
           printf 'torch==2.8.0+cpu\ntorchvision==0.23.0+cpu\n' > /tmp/cpu-constraints.txt
           pip download --dest wheelhouse --find-links wheelhouse -c /tmp/cpu-constraints.txt -r requirements.txt

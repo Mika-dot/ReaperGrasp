@@ -17,6 +17,7 @@ if [[ $(pwd) != /opt/reapergrasp ]]; then rsync -a --exclude=.git --exclude=.ven
 cd /opt/reapergrasp
 python3 tools/fetch_assets.py
 python3 -m venv .venv
+.venv/bin/python -m pip install --upgrade pip==25.2
 .venv/bin/pip install torch==2.8.0 torchvision==0.23.0 --index-url "$torch_index"
 .venv/bin/pip install -r requirements.txt
 .venv/bin/python -c 'from reapergrasp.model import verify_bundle; verify_bundle("models/version_1")'
@@ -29,6 +30,6 @@ mkdir -p /etc/systemd/logind.conf.d
 printf '[Login]\nNAutoVTs=0\nReserveVT=0\n' > /etc/systemd/logind.conf.d/reapergrasp.conf
 systemctl mask getty@tty1.service getty@tty2.service getty@tty3.service getty@tty4.service getty@tty5.service getty@tty6.service ctrl-alt-del.target
 systemctl set-default multi-user.target
-systemctl enable reapergrasp.service reapergrasp-kiosk.service
+systemctl enable reapergrasp.service reapergrasp-kiosk.service reapergrasp-boot-report.service
 # During image construction systemd is not running. Start on next boot.
 if [[ -d /run/systemd/system ]]; then systemctl daemon-reload;systemctl restart reapergrasp.service reapergrasp-kiosk.service; fi

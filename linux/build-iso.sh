@@ -7,7 +7,7 @@ source_dir=$(cd "$(dirname "$0")/.." && pwd)
 build_dir=${REAPERGRASP_BUILD_DIR:-/var/tmp/reapergrasp-live}
 mkdir -p "$build_dir"
 cd "$build_dir"
-lb config --distribution bookworm --architectures amd64 --binary-images iso-hybrid --archive-areas 'main contrib non-free non-free-firmware' --debian-installer live --bootappend-live 'boot=live components persistence quiet username=operator'
+lb config --distribution bookworm --architectures amd64 --binary-images iso-hybrid --archive-areas 'main contrib non-free non-free-firmware' --debian-installer live --bootappend-live 'boot=live components persistence quiet username=operator reapergrasp.selftest=1 console=ttyS0,115200 console=tty1'
 mkdir -p config/includes.chroot/opt/reapergrasp config/hooks/normal config/package-lists
 rsync -a --exclude=.git --exclude=.venv --exclude=build "$source_dir/" config/includes.chroot/opt/reapergrasp/
 printf 'linux-image-amd64\nlive-boot\nlive-config\nsystemd-sysv\nfirmware-linux\npython3-venv\npython3-pip\ncage\nchromium\nrsync\n' > config/package-lists/reapergrasp.list.chroot

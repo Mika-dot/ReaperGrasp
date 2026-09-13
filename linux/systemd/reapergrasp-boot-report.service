@@ -1,0 +1,13 @@
+[Unit]
+Description=ReaperGrasp experimental image readiness report
+ConditionKernelCommandLine=reapergrasp.selftest=1
+After=reapergrasp.service
+Wants=reapergrasp.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/reapergrasp/linux/boot-report.py
+TimeoutStartSec=300
+
+[Install]
+WantedBy=multi-user.target

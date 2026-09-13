@@ -20,10 +20,17 @@ jobs:
             apt-get install -y live-build rsync ca-certificates
             REAPERGRASP_BUILD_DIR=/output bash /src/linux/build-iso.sh
           '
+      - name: Boot ISO without network
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y qemu-system-x86 python3-pil tesseract-ocr
+          /usr/bin/python3 linux/verify-boot.py "$RUNNER_TEMP/output/live-image-amd64.hybrid.iso" "$RUNNER_TEMP/boot-check"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: ReaperGrasp-experimental-ISO
           path: |
             ${{ runner.temp }}/output/*.iso
             ${{ runner.temp }}/output/*.sha256
+            ${{ runner.temp }}/boot-check/
           retention-days: 7

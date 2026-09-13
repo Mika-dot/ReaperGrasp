@@ -46,3 +46,14 @@ def test_disk_full_never_claims_recorded(tmp_path,monkeypatch):
     monkeypatch.setattr(storage.shutil,'disk_usage',lambda path:SimpleNamespace(free=0))
     with pytest.raises(OSError):store.record('c',{'state':'defect'},b'jpeg')
     assert store.list()==[]
+
+def test_inference_cuda_failure_reloads_cpu_and_clears_all_history():
+    from reapergrasp.model import ModelEngine
+    engine=ModelEngine.__new__(ModelEngine);engine.device='cuda';engine.histories={'a':[1],'b':[2]};engine.timestamps={'a':1,'b':2}
+    def load():engine.reset()
+    def infer(*args):
+        if engine.device=='cuda':raise RuntimeError('CUDA kernel failed')
+        return {'state':'warming_up'}
+    engine._load=load;engine._infer=infer
+    assert engine.infer('a',None,3)['state']=='warming_up'
+    assert engine.device=='cpu' and engine.histories=={} and 'CUDA kernel failed' in engine.fallback_reason

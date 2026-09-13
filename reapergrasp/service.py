@@ -24,6 +24,7 @@ class Service:
         with self.lock:
             rows=copy.deepcopy([c.state for c in self.cameras.values()])
             for row in rows:
+                if self.status=='error':row.update(state='inference_error',probability=None)
                 if time.monotonic()-row.get('processed',0)>self.settings.stale_seconds and row['state'] in ('normal','defect','review','warming_up'):
                     row.update(state='stale',probability=None)
             return dict(status=self.status,error=self.error,storage_error=self.storage_error,source=self.settings.source,device=self.engine.device if self.engine else None,fallback_reason=self.engine.fallback_reason if self.engine else None,cameras=rows)
