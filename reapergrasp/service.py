@@ -67,7 +67,7 @@ class Service:
                 active=False
                 for key,camera in list(self.cameras.items()):
                     if self.stop_event.is_set():break
-                    packet=camera.poll()
+                    with self.lock:packet=camera.poll()
                     if packet is None:continue
                     active=True
                     if packet['reset']:self.engine.reset(key)

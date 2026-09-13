@@ -4,6 +4,11 @@ on:
   push:
     paths:
       - 'linux/**'
+      - 'reapergrasp/**'
+      - '*.py'
+      - 'requirements.txt'
+      - 'models/**'
+      - 'tools/fetch_assets.py'
       - '.github/workflows/iso.yml'
 permissions:
   contents: read
