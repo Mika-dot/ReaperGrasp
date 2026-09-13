@@ -19,7 +19,7 @@ RuntimeDirectoryMode=0700
 Environment=XDG_RUNTIME_DIR=/run/reapergrasp-kiosk
 Environment=XDG_SESSION_TYPE=wayland
 Environment=HOME=/var/lib/reapergrasp
-ExecStart=/usr/bin/cage -- /usr/bin/chromium --ozone-platform=wayland --kiosk --no-first-run --disable-session-crashed-bubble --noerrdialogs --user-data-dir=/var/lib/reapergrasp/chromium http://127.0.0.1:8010
+ExecStart=/opt/reapergrasp/linux/kiosk.sh
 Restart=always
 RestartSec=3
 

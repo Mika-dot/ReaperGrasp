@@ -66,6 +66,9 @@ def save(path, settings):
         with os.fdopen(fd,'w') as f:
             json.dump(asdict(settings),f,ensure_ascii=False,indent=2);f.flush();os.fsync(f.fileno())
         os.replace(name,path)
+        directory_fd=os.open(path.parent,os.O_RDONLY|os.O_DIRECTORY)
+        try:os.fsync(directory_fd)
+        finally:os.close(directory_fd)
     finally:
         if os.path.exists(name):os.unlink(name)
 

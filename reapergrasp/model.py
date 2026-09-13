@@ -1,4 +1,5 @@
 """One inference owner; no downloads or changes to global Config at startup."""
+import os
 import hashlib
 import json
 import logging
@@ -33,6 +34,7 @@ def choose_device(torch, requested='auto'):
 
 class ModelEngine:
     def __init__(self, settings):
+        os.environ['YOLO_OFFLINE']='true'
         import torch
         self.torch=torch;torch.set_num_threads(settings.threads)
         self.settings=settings

@@ -1,5 +1,10 @@
 name: Build experimental Debian ISO
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'linux/**'
+      - '.github/workflows/iso.yml'
 permissions:
   contents: read
 jobs:

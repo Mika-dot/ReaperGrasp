@@ -4,6 +4,8 @@ permissions:
   contents: read
 jobs:
   verify:
+    permissions:
+      contents: write
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
@@ -16,6 +18,9 @@ jobs:
       - run: python -m pytest -q tests
       - run: python tools/replay_check.py
       - run: python tools/service_check.py
+      - run: pip install playwright==1.55.0
+      - run: python -m playwright install --with-deps chromium
+      - run: python tools/ui_check.py
       - run: |
           pip download --dest wheelhouse torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cpu
           printf 'torch==2.8.0+cpu\ntorchvision==0.23.0+cpu\n' > /tmp/cpu-constraints.txt
@@ -29,3 +34,11 @@ jobs:
           name: ReaperGrasp-offline-cpu-py311
           path: /tmp/ReaperGrasp-offline-cpu-py311.tar.gz
           retention-days: 30
+      - name: Publish verified application bundle
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd /tmp
+          sha256sum ReaperGrasp-offline-cpu-py311.tar.gz > ReaperGrasp-offline-cpu-py311.tar.gz.sha256
+          gh release create "preview-${GITHUB_SHA:0:12}" ReaperGrasp-offline-cpu-py311.tar.gz ReaperGrasp-offline-cpu-py311.tar.gz.sha256 "$GITHUB_WORKSPACE/docs/ui-desktop.png" "$GITHUB_WORKSPACE/docs/ui-small.png" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --title "ReaperGrasp preview ${GITHUB_SHA:0:12}" --notes "Verified CPU application bundle for Python 3.11/Linux x86-64. Includes models, demo frames and offline Python wheels. This is not a bootable OS image; hardware and production accuracy validation remain pending."
