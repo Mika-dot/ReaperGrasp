@@ -30,4 +30,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "boot-diagnostics-${GITHUB_SHA:0:12}" $(find saved -name boot.png -o -name boot-result.json -o -name boot-serial.log -o -name qemu.log) --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --title 'Experimental boot diagnostics' --notes 'Diagnostic files from the failed virtual-machine boot test. Not a deployable release.'
+          gh release create "boot-diagnostics-${GITHUB_SHA:0:12}" $(find saved -type f ! -empty \( -name boot.png -o -name boot-result.json -o -name boot-serial.log -o -name qemu.log \)) --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --title 'Experimental boot diagnostics' --notes 'Diagnostic files from the failed virtual-machine boot test. Not a deployable release.'
