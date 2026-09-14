@@ -24,6 +24,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y qemu-system-x86 python3-pil tesseract-ocr xorriso
           xorriso -osirrox on -indev saved/output/live-image-amd64.hybrid.iso -extract /isolinux boot-tree/isolinux
+          chmod -R u+w boot-tree
           /usr/bin/python3 linux/configure-autoboot.py boot-tree
           xorriso -indev saved/output/live-image-amd64.hybrid.iso -outdev /tmp/autoboot.iso -boot_image any replay -map boot-tree/isolinux/isolinux.cfg /isolinux/isolinux.cfg
           /usr/bin/python3 tools/inspect_saved_iso.py /tmp/autoboot.iso inspected --timeout 360
@@ -37,6 +38,7 @@ jobs:
                   print(p.read_text(errors='replace')[-24000:])
           PY
       - name: Save diagnostic screenshot
+        if: hashFiles('inspected/boot.png') != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
