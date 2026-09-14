@@ -1,0 +1,33 @@
+name: Inspect saved boot diagnostics
+on:
+  push:
+    paths: ['.github/workflows/diagnose-boot.yml']
+  workflow_dispatch:
+permissions:
+  actions: read
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          repository: Mika-dot/ReaperGrasp
+          run-id: 34758379031
+          name: ReaperGrasp-experimental-ISO
+          path: saved
+      - name: Read diagnostics
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          for p in Path('saved').rglob('*'):
+              if p.suffix in ('.json','.log'):
+                  print('\nFILE',p)
+                  print(p.read_text(errors='replace')[-24000:])
+          PY
+      - name: Save diagnostic screenshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "boot-diagnostics-${GITHUB_SHA:0:12}" $(find saved -name boot.png -o -name boot-result.json -o -name boot-serial.log -o -name qemu.log) --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --title 'Experimental boot diagnostics' --notes 'Diagnostic files from the failed virtual-machine boot test. Not a deployable release.'
