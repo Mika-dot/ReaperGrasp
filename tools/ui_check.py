@@ -25,6 +25,8 @@ def main():
                 assert not page.evaluate('document.documentElement.scrollWidth > innerWidth')
                 page.screenshot(path=str(ROOT/'docs/ui-small.png'),full_page=True)
                 (ROOT/'docs/validation-ui.json').write_text(json.dumps({'errors':errors,'cameras':2,'viewport_checks':['1440x1000','800x600']},indent=2))
+                page.route('**/api/status',lambda route:None)
+                page.wait_for_function("document.querySelector('#cameras').children.length===0 && document.querySelector('#notice').textContent.includes('Нет связи')",timeout=6000)
                 browser.close()
         finally:
             server.terminate()

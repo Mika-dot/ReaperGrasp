@@ -22,8 +22,11 @@ jobs:
         continue-on-error: true
         run: |
           sudo apt-get update
-          sudo apt-get install -y qemu-system-x86 python3-pil tesseract-ocr
-          /usr/bin/python3 tools/inspect_saved_iso.py saved/output/live-image-amd64.hybrid.iso inspected --timeout 90
+          sudo apt-get install -y qemu-system-x86 python3-pil tesseract-ocr xorriso
+          xorriso -osirrox on -indev saved/output/live-image-amd64.hybrid.iso -extract /isolinux boot-tree/isolinux
+          /usr/bin/python3 linux/configure-autoboot.py boot-tree
+          xorriso -indev saved/output/live-image-amd64.hybrid.iso -outdev /tmp/autoboot.iso -boot_image any replay -map boot-tree/isolinux/isolinux.cfg /isolinux/isolinux.cfg
+          /usr/bin/python3 tools/inspect_saved_iso.py /tmp/autoboot.iso inspected --timeout 360
       - name: Read diagnostics
         run: |
           python3 - <<'PY'

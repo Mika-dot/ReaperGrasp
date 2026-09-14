@@ -19,5 +19,7 @@ bash /opt/reapergrasp/linux/install.sh --kiosk cpu
 passwd -l root
 HOOK
 chmod +x config/hooks/normal/0900-reapergrasp.hook.chroot
+cp "$source_dir/linux/configure-autoboot.py" config/hooks/normal/0950-autoboot.hook.binary
+chmod +x config/hooks/normal/0950-autoboot.hook.binary
 lb build
 sha256sum live-image-amd64.hybrid.iso > live-image-amd64.hybrid.iso.sha256
