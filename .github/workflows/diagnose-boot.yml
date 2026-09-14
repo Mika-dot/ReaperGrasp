@@ -10,6 +10,7 @@ jobs:
   inspect:
     runs-on: ubuntu-24.04
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           github-token: ${{ github.token }}
@@ -17,11 +18,17 @@ jobs:
           run-id: 34758379031
           name: ReaperGrasp-experimental-ISO
           path: saved
+      - name: Inspect with QMP
+        continue-on-error: true
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y qemu-system-x86 python3-pil tesseract-ocr
+          /usr/bin/python3 tools/inspect_saved_iso.py saved/output/live-image-amd64.hybrid.iso inspected --timeout 90
       - name: Read diagnostics
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          for p in Path('saved').rglob('*'):
+          for p in Path('inspected').rglob('*'):
               if p.suffix in ('.json','.log'):
                   print('\nFILE',p)
                   print(p.read_text(errors='replace')[-24000:])
@@ -30,4 +37,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "boot-diagnostics-${GITHUB_SHA:0:12}" $(find saved -type f ! -empty \( -name boot.png -o -name boot-result.json -o -name boot-serial.log -o -name qemu.log \)) --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --title 'Experimental boot diagnostics' --notes 'Diagnostic files from the failed virtual-machine boot test. Not a deployable release.'
+          gh release create "boot-diagnostics-${GITHUB_SHA:0:12}" $(find inspected -type f ! -empty \( -name boot.png -o -name boot-result.json -o -name boot-serial.log -o -name qemu.log \)) --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --title 'Experimental boot diagnostics' --notes 'Diagnostic files from the failed virtual-machine boot test. Not a deployable release.'
