@@ -1,0 +1,51 @@
+name: Publish verified experimental ISO
+on:
+  workflow_run:
+    workflows: ['Build experimental Debian ISO']
+    types: [completed]
+permissions:
+  actions: read
+  contents: write
+jobs:
+  publish:
+    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
+          name: ReaperGrasp-experimental-ISO
+          path: saved
+      - name: Prepare immutable image parts
+        env:
+          IMAGE_COMMIT: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          mkdir image-release
+          python3 - <<'PY'
+          import hashlib,json,os
+          from pathlib import Path
+          source=Path('saved/output/live-image-amd64.hybrid.iso');digest=hashlib.sha256();parts=[]
+          with source.open('rb') as stream:
+              i=0
+              while True:
+                  chunk=stream.read(1024*1024)
+                  if not chunk:break
+                  name=f'ReaperGrasp.iso.part-{i:02d}';parts.append(name)
+                  with (Path('image-release')/name).open('wb') as output:
+                      for n in range(1800):
+                          if n:chunk=stream.read(1024*1024)
+                          if not chunk:break
+                          output.write(chunk);digest.update(chunk)
+                  i+=1
+          Path('image-release/image-manifest.json').write_text(json.dumps({'sha256':digest.hexdigest(),'parts':parts,'source_commit':os.environ['IMAGE_COMMIT']},indent=2))
+          PY
+          cp linux/assemble-image.py image-release/
+          cp saved/boot-check/boot-result.json saved/boot-check/boot.png image-release/
+      - name: Publish boot-tested CPU image
+        env:
+          GH_TOKEN: ${{ github.token }}
+          IMAGE_COMMIT: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          gh release create "iso-${IMAGE_COMMIT:0:12}" image-release/* --repo "$GITHUB_REPOSITORY" --target "$IMAGE_COMMIT" --prerelease --title "ReaperGrasp experimental CPU ISO ${IMAGE_COMMIT:0:12}" --notes 'Actual ISO boot tested in QEMU with networking disabled. Download both ISO parts, image-manifest.json and assemble-image.py into one folder, then run python assemble-image.py. Real cameras, GPU operation, UEFI and disk installation still require target-hardware validation.'
